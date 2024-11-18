@@ -1,0 +1,19 @@
+if (TARGET_NUC980_D1001)
+
+config SYS_BOARD
+	default "nuc980"
+
+config SYS_VENDOR
+	default "rit"
+
+config SYS_SOC
+	default "nuc980"
+
+config SYS_CONFIG_NAME
+	default "nuc980_d1001" if TARGET_NUC980_D1001
+
+config NUC980
+	bool
+	default y
+
+endif

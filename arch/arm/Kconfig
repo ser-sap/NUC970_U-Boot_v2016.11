@@ -187,10 +187,6 @@ config TARGET_MX25PDK
 	bool "Support mx25pdk"
 	select CPU_ARM926EJS
 
-config TARGET_NUC970_BT1001
-	bool "Support nuc970_BT1001"
-	select CPU_ARM926EJS
-
 config TARGET_NUC970
 	bool "Support nuc970/n9h30"
 	select CPU_ARM926EJS
@@ -207,6 +203,10 @@ config TARGET_NUC970_ETH2UART
 config TARGET_N9H30_MATTER
         bool "Support n9h30 matter"
         select CPU_ARM926EJS
+
+config TARGET_NUC970_BT1001
+	bool "Support NUC970 BT1001"
+	select CPU_ARM926EJS
 
 config TARGET_NUC980
 	bool "Support NUC980"
@@ -232,6 +232,10 @@ config TARGET_NUC980_CHILI
 	bool "Support NUC980 CHILI"
 	select CPU_ARM926EJS
 
+config TARGET_NUC980_D1001
+	bool "Support NUC980 DAS D1001"
+	select CPU_ARM926EJS
+  
 config TARGET_ZMX25
 	bool "Support zmx25"
 	select CPU_ARM926EJS
@@ -1067,7 +1071,8 @@ source "board/vscom/baltos/Kconfig"
 source "board/woodburn/Kconfig"
 source "board/work-microwave/work_92105/Kconfig"
 source "board/zipitz2/Kconfig"
-
+source "board/rit/nuc970/Kconfig"
+source "board/rit/nuc980/Kconfig"
 source "arch/arm/Kconfig.debug"
 
 endmenu

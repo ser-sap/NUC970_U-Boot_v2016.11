@@ -1,0 +1,19 @@
+if (TARGET_NUC970_BT1001)
+
+config SYS_BOARD
+	default "nuc970"
+
+config SYS_VENDOR
+	default "rit"
+
+config SYS_SOC
+	default "nuc970"
+
+config SYS_CONFIG_NAME
+	default "nuc970_bt1001" if TARGET_NUC970_BT1001
+
+config NUC970
+	bool
+	default y
+
+endif
